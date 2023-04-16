@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.0/css/line.css"
+    >
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    >
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?      family=Oswald:wght@200;300;400;500;600;700&family=Tilt+Warp&family=Work+Sans:wght@100;200;300;400;500;900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="./styles/index.css"
+    >
+    
+    <title>ACE Suites</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-bar">
+         <a
+                href="#hero"
+                class="logo-title"
+        > <img
+                src="../images/logos/suites-logo-2.png"
+                alt="suites-logo"
+        ></a>
+        <a class="logo"><img
+                src="../images/logos/suites-logo.png"
+                alt="suites-logo"
+        ></a>
+        <div class="navigation">
+          <div class="nav-items">
+            <i class="uil uil-multiply nav-close-btn"></i>
+            <a href="#hero"><i class="uil uil-spade"></i></i>Home</a>
+            <a href="#about"><i class="uil uil-info"></i></i>About</a>
+            <a href="/pages/suites.html"><i class="uil uil-home"></i>Suites</a>
+            <a href="/pages/fleet.html"><i class="uil uil-car-sideview"></i></i>Fleet</a>
+            <a href="#contact"><i class="uil uil-envelope"></i></i>Contact</a>
+          </div>
+        </div>
+        <i class="uil uil-apps nav-menu-btn"></i>
+      </div>
+      <div class="scroll-indicator-container">
+        <div class="scroll-indicator-bar"></div>
+      </div>
+    </header>
+      <div
+      class="parallax_bg hero"
+      id="hero"
+    >
+
+      <div class="info">
+        <h1 class="xl text-shadow xl-home">
+          <span class="text-span-4">We are</span>
+          ACE Suites
+        </h1>
+        <p>
+          Boutique Rentals.
+        </p>
+      </div>
+      <a
+        href="#about"
+        class="arrow"
+      >
+        <i class="uil uil-angle-down"></i>
+      </a>
+      </div>
+
+      <section id="about">
+      <div class="section">
+        <h2>About</h2>
+        <p>
+          Founded in 2019, we have established a reputation for delivering
+          the highest quality of service to clients, Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Deleniti
+          illum adipisci laborum amet quas eius, et quasi itaque alias
+          repellendus
+          numquam odit aspernatur
+        </p>
+      </div>
+      </section>
+
+      <div class="parallax_bg bg1"></div>
+
+      <section id="suites" class="suites">
+      <div class="section">
+        <h2>Suites</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+          beatae, ut delectus porro tempore culpa optio omnis iusto dolore
+          vero recusandae in quaerat quisquam
+
+        </p>
+        <a
+          href="/pages/suites.html"
+          class="browse-suites-btn"
+        >Browse Suites</a>
+      </div>
+      </section>
+
+      <div class="parallax_bg bg2"></div>
+
+      <section
+      id="fleet"
+      class="fleet"
+    >
+      <div class="section ">
+        <h2>Fleet</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+          illum adipisci laborum amet quas eius, et quasi itaque alias
+          repellendus
+          numquam odit aspernatur
+        </p>
+        <a
+          href="./pages/fleet.html"
+          class="browse-fleet-btn"
+        >Browse Fleet</a>
+      </div>
+      </section>
+
+      <div
+      class="parallax_bg contact-section"
+      id="contact"
+    >
+
+      <div class="contact-info">
+        <div><i class="fa-solid fa-location-dot"></i>121 Tortuga Bend, Orlando, Florida</div>
+        <div><i class="fa-regular fa-envelope"></i>aceluxrentals@ace-suites.com</div>
+        <div><i class="fa-solid fa-phone-flip"></i>+1 321-368-4626</div>
+        <div><i class="fa-regular fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/eceb09d75463a16c17bafafa5d437c56 " method="POST">
+          <input type="text"  id="name" name="name" class="text-box" placeholder="Your Name" required>
+        <input type="email"  id="email" name="email" class="text-box" placeholder="Your Email" required>
+        <textarea name="message" class="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="submit" name="submit" class="send-btn" value="Send">
+        <input type="hidden" name="_captcha" value="false">
+        </form> 
+      </div>
+      </div>
+
+    <footer><p>ACE Suites LLC&copy; <script>document.write(new Date().getFullYear());</script></p></footer>
+    <script src="scripts/script.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,475 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: "Oswald", sans-serif; */
+    /* font-family: "Oswald", sans-serif; */
+    /* font-family: "Tilt Warp", cursive; */
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* =====================HEADER AND NAVBAR======================= */
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s ease;
+    transition-property: height, background;
+}
+
+header .nav-bar {
+    /* height: 3rem;
+    padding: 3.5rem; */
+    padding: 30px 30px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.logo img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 13em;
+}
+
+.navigation .nav-items a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    letter-spacing: 0.5px;
+}
+
+.navigation .nav-items a:hover {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.navigation .nav-items a:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation .nav-items a i {
+    display: none;
+}
+
+.nav-close-btn,
+.nav-menu-btn {
+    display: none;
+}
+
+/*======================= STICKY NAVIGATION======================= */
+header.sticky .nav-bar {
+    background-color: #76736eb7;
+    backdrop-filter: blur(20px);
+    height: 2rem;
+    padding: 2.5rem;
+    justify-content: space-between;
+}
+
+header.sticky .nav-bar {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+}
+
+header.sticky .logo img {
+    position: absolute;
+    display: none;
+}
+
+/*======================= SCROLL INDICATOR BAR======================= */
+.scroll-indicator-container {
+    width: 100%;
+    height: 5px;
+}
+
+.scroll-indicator-bar {
+    background: #199fff;
+    width: 0%;
+    height: 100%;
+    box-shadow: 0 5px 25px #199fff, 0 5px 50px #199fff;
+}
+
+.parallax_bg {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallax_bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* ===================HERO SECTION================== */
+.hero .info {
+    color: #fff;
+    /* max-width: 50%; */
+    margin-top: 300px;
+    margin-left: 30px;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("../images/002-bg.jpg");
+    background-position: 30% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.xl-home {
+    display: block;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-left: -2px;
+    font-size: 100px;
+    line-height: 90px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.text-span-4 {
+    font-weight: 100;
+    tran
+}
+
+.xl.text-shadow {
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 60%);
+}
+
+.hero .info p {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    text-align: left;
+}
+
+h2 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* ==================ANIMATION================== */
+h1 {
+    animation-delay: 250ms;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-bottom: 100%;
+    }
+
+    to {
+        margin-bottom: 0%;
+    }
+}
+
+.hero {
+    min-height: 100vh;
+}
+
+.hero:before {
+    z-index: 888;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(transparent, #fafafa);
+}
+
+.arrow {
+    text-decoration: none;
+    color: white;
+    font-size: 3.5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    z-index: 988;
+    width: 100%;
+}
+
+.arrow i {
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    10% {
+        transform: translateY(-5px);
+    }
+
+    20% {
+        transform: translateY(5px);
+    }
+
+    30% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    70% {
+        transform: translateY(7px);
+    }
+
+    80% {
+        transform: translateY(15px);
+    }
+
+    90% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.arrow.sticky {
+    display: none;
+}
+
+section {
+    position: relative;
+    padding: 4rem;
+    transition: 0.5s ease;
+    transition-property: padding;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    color: rgb(76, 82, 96);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+/* #about {
+    background-color: #FF6542;
+}
+
+#suites {
+    background-color: #F03A47;
+}
+
+#fleet {
+    background-color: #276FBF;
+    color: white;
+} */
+.info {
+    text-align: center;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 3.5em;
+}
+
+.info p {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+/* ===================CONTACT SECTION================= */
+.contact .info {
+    color: #fff;
+}
+
+.contact .info h1 {
+    font-size: 4rem;
+}
+
+.contact .info p {
+    font-size: 1.5rem;
+    max-width: 70%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===================PARALLAX BACKGROUND==================== */
+.bg1 {
+    background-image: url("../images/slides/02.jpg");
+}
+
+.bg2 {
+    background-image: url("../images/fleet.jpg");
+}
+
+.contact {
+    height: 100vh;
+    background-image: url("../images/03_bg.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================MEDIA QUERIES================== */
+@media screen and (max-width: 1100px) {
+    section {
+        padding: 30px 50px;
+        font-size: 0.9em;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav-bar .logo img {
+        width: 100px;
+    }
+
+    .nav-bar .logo {
+        left: 200px;
+    }
+
+    header .nav-bar {
+        padding: 2.5rem;
+    }
+
+    section {
+        padding: 60px 20px;
+        font-size: 0.8em;
+    }
+
+    .hero .info {
+        margin-top: 260px;
+        line-height: 150%;
+        /* line-height: 1em; */
+    }
+
+    .hero.info h1 {
+        line-height: 0.7px;
+    }
+
+    .xl.text-shadow.xl-home {
+        line-height: 3.5rem;
+        font-size: 3.2rem;
+    }
+
+    /* ==================NAVIGATION MENU================== */
+    .nav-menu-btn {
+        display: block;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .navigation {
+        z-index: 99999;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0s ease;
+    }
+
+    .navigation.active {
+        transition: 0.3s ease;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navigation .nav-items {
+        position: relative;
+        background: #fff;
+        width: 400px;
+        max-width: 400px;
+        display: grid;
+        place-content: center;
+        margin: 20px;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
+        transform: translateY(-200px);
+        transition: 0.3s ease;
+    }
+
+    .navigation.active .nav-items {
+        transform: translateY(0);
+    }
+
+    .navigation .nav-items a {
+        color: #222;
+        font-size: 1em;
+        margin: 15px 50px;
+    }
+
+    .navigation .nav-items a i {
+        display: inline-block;
+        font-size: 1.2em;
+        margin-right: 5px;
+    }
+
+    .nav-close-btn {
+        display: block;
+        color: #222;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.3em;
+        margin: 10px;
+        cursor: pointer;
+    }
+}

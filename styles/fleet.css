@@ -1,0 +1,202 @@
+/* =====================HEADER AND NAVBAR======================= */
+html, body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.hero {
+    background-image: url("../images/background/hero-bg-fleet.jpg");
+    width: 100%;
+}
+
+/* ===================HERO SECTION================== */
+.hero:before {
+    background: linear-gradient(transparent, #e8e8e8);
+}
+
+/* ==================HERO TITLE ANIMATION================== */
+.xl-home, .info-p {
+    position: relative;
+    animation: slide-left 3s;
+}
+
+@keyframes slide-left {
+    from {
+        left: 1200px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+/* ==================CAR LIST================== */
+section {
+    padding: 40px 0 40px 0;
+}
+
+.cars h2 {
+    color: rgb(59, 65, 64);
+    text-align: center;
+}
+
+.cars {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cars ul {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px 20px;
+}
+
+.cars li {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    font-size: 1rem;
+    width: 50vw;
+}
+
+.item-content h2 {
+    color: rgb(59, 65, 64);
+    margin: 0;
+}
+
+.card {
+    display: flex;
+}
+
+.carousel {
+    width: 50vw;
+    height: 30vh;
+    position: relative;
+}
+
+.carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.swiper-pagination {
+    color: #fff;
+}
+
+.swiper-slide img {
+    display: inline-block;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mySwiper {
+    display: inline-block;
+    width: 50vw;
+    height: 30vh;
+    object-position: center;
+}
+
+.carousel-btn-prev, .carousel-btn-next {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-prev {
+    left: .45rem;
+}
+
+.swiper-button-next {
+    right: .5rem;
+}
+
+.actions {
+    margin: 20px;
+}
+
+.actions a {
+    color: #000;
+    text-decoration: none;
+    background: #4f9edb;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 8px 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    font-size: 1.4rem;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-section {
+    background-image: url("../images/fleet/012.jpg");
+}
+
+@media screen and (max-width: 900px) {
+    .cars ul {
+        width: 95%;
+    }
+
+    .cars li {
+        flex-direction: column;
+    }
+
+    .mySwiper {
+        width: 97vw;
+    }
+
+    .item-content {
+        width: 100vw;
+    }
+
+    .contact-info {
+        font-size: 1rem;
+    }
+}
