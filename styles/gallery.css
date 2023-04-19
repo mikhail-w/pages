@@ -33,6 +33,9 @@
 /* Images */
 #index-gallery h2 {
     grid-area: gallery-h2;
+    color: rgb(59, 65, 64);
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 #index-gallery .family-01 {
@@ -137,7 +140,7 @@
 .img-window {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.95);
     position: fixed;
     top: 0;
     left: 0;
@@ -145,11 +148,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 500;
+    z-index: 800;
 }
 
 .img-window img {
-    max-width: 70vw;
+    max-width: 100vw;
     max-height: 80vh;
 }
 
@@ -161,7 +164,7 @@
     background-color: #111;
     position: fixed;
     top: 50vh;
-    z-index: 600;
+    z-index: 801;
     color: #fff;
 }
 

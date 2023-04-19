@@ -72,7 +72,7 @@
 
 /* =============================BACKGROUND SLIDER============================ */
 .bg-slider {
-    z-index: 777;
+    z-index: 300;
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -187,7 +187,7 @@
 .bg-slider-thumbs {
     justify-content: center;
     text-align: center;
-    z-index: 777;
+    z-index: 350;
     position: absolute;
     display: flex;
     bottom: 0;
