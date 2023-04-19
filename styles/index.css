@@ -76,7 +76,7 @@ header .nav-bar {
 /*======================= STICKY NAVIGATION======================= */
 header.sticky .nav-bar {
     /* background: linear-gradient(to right, #141e30, #243b55); */
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(100, 85, 210, 0.346);
     backdrop-filter: blur(45px);
     /* height: 2rem; */
     padding: 15px 30px;
