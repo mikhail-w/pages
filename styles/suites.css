@@ -196,11 +196,6 @@
     transition: 0.3s ease;
 }
 
-.about {
-    display: block;
-    padding: 3rem;
-}
-
 .thumbs-container {
     padding: 10px 3px;
     border-radius: 10px;
