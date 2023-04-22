@@ -56,7 +56,7 @@ body.lb-disable-scrolling {
   clear: both;
 }
 
-.lb-loader {
+/* .lb-loader {
   position: absolute;
   top: 43%;
   left: 0;
@@ -72,8 +72,7 @@ body.lb-disable-scrolling {
   height: 32px;
   margin: 0 auto;
   background: url(../images/lightbox/loading.gif) no-repeat;
-}
-
+} */
 .lb-nav {
   position: absolute;
   top: 0;
