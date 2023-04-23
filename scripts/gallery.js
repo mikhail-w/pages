@@ -5,11 +5,18 @@ let windowWidth = window.innerWidth;
 if (galleryImages) {
     galleryImages.forEach(function (image, index) {
         image.onclick = function () {
-            let getElementCss = window.getComputedStyle(image);
-            let getFullImgUrl = getElementCss.getPropertyValue("background-image");
-            let getImgUrlPos = getFullImgUrl.split("/images/suites/family/");
-            let setNewImgUrl = getImgUrlPos[1].replace('")', '')
+            let getFullImgUrl = image.innerHTML;
+            // console.log(image.innerHTML);
 
+            // alert(image.innerHTML)
+            // var mySubString = getFullImgUrl.substring(
+            //     getFullImgUrl.lastIndexOf("/") + 1
+            // );
+            // console.log(mySubString);
+
+            let getImgUrlPos = getFullImgUrl.split("/images/suites/family/");
+            let test = getImgUrlPos[1].split('"');
+            let setNewImgUrl = test[0];
             getLatestOpenedImg = index + 1;
 
             let container = document.body;
