@@ -217,7 +217,7 @@
     border: 1px solid #fff;
 }
 
-/* Gallery Section */
+/* ==================Gallery Section=========================*/
 .gallery-section h2 {
     grid-area: gallery-h2;
     color: rgb(59, 65, 64);
@@ -242,6 +242,51 @@
 
 .gallery img {
     width: 100%;
+}
+
+/* ======================Popup window when clicked=========================*/
+.img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+}
+
+.img-window img {
+    max-width: 99vw;
+    /* max-height: 80vh; */
+}
+
+/*======================Prev and Next button=========================*/
+.img-btn-prev, .img-btn-next {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111;
+    position: fixed;
+    top: 50vh;
+    z-index: 600;
+    color: #fff;
+}
+
+.img-btn-next {
+    right: 1vw;
+}
+
+.img-btn-prev {
+    left: 1vw;
+}
+
+.img-btn-next, .img-btn-prev:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
