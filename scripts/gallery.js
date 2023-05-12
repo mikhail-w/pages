@@ -5,10 +5,11 @@ let windowWidth = window.innerWidth;
 if (galleryImages) {
     galleryImages.forEach(function (image, index) {
         image.onclick = function () {
-            let getFullImgUrl = image.innerHTML;
+            let getElementCss = window.getComputedStyle(image);
+            let getFullImgUrl = getElementCss.getPropertyValue("background-image");
             let getImgUrlPos = getFullImgUrl.split("/images/suites/family/");
-            let test = getImgUrlPos[1].split('"');
-            let setNewImgUrl = test[0];
+            let setNewImgUrl = getImgUrlPos[1].replace('")', '')
+
             getLatestOpenedImg = index + 1;
 
             let container = document.body;
@@ -23,27 +24,25 @@ if (galleryImages) {
             newImg.setAttribute("id", "current-img");
 
             newImg.onload = function () {
+                // let imgWidth = this.width;
+                // let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
 
                 let newNextBtn = document.createElement("a");
-                let btnNextText = document.createTextNode("");
+                let btnNextText = document.createTextNode(">");
                 newNextBtn.appendChild(btnNextText);
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute("class", "img-btn-next");
                 newNextBtn.setAttribute("onclick", "changeImg(1)");
+                // rightEdge = calcImgToEdge - 10;
+                // newNextBtn.style.cssText = "right: " + rightEdge + "px;";
 
                 let newPrevBtn = document.createElement("a");
-                let btnPrevText = document.createTextNode("");
+                let btnPrevText = document.createTextNode("<");
                 newPrevBtn.appendChild(btnPrevText);
                 container.appendChild(newPrevBtn);
                 newPrevBtn.setAttribute("class", "img-btn-prev");
                 newPrevBtn.setAttribute("onclick", "changeImg(0)");
-
-                let closeBtn = document.createElement("a");
-                let closeBtnText = document.createTextNode("");
-                closeBtn.appendChild(closeBtnText);
-                container.appendChild(closeBtn);
-                closeBtn.setAttribute("class", "close-btn");
-                closeBtn.setAttribute("onclick", "closeImg()");
+                // newPrevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
 
             }
         }
@@ -54,7 +53,6 @@ function closeImg() {
     document.querySelector(".img-window").remove();
     document.querySelector(".img-btn-next").remove();
     document.querySelector(".img-btn-prev").remove();
-    document.querySelector(".close-btn").remove();
 }
 
 function changeImg(changeDir) {
