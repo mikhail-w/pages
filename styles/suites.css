@@ -217,7 +217,7 @@
     border: 1px solid #fff;
 }
 
-/* Gallery Section */
+/* ==================Gallery Section=========================*/
 .gallery-section h2 {
     grid-area: gallery-h2;
     color: rgb(59, 65, 64);
@@ -228,7 +228,6 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 8%;
@@ -241,7 +240,87 @@
 }
 
 .gallery img {
-    width: 100%;
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.item:hover {
+    filter: brightness(80%);
+}
+
+/* ======================Popup window when clicked=========================*/
+.img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+}
+
+.img-window img {
+    max-width: 99vw;
+    max-height: 80vh;
+}
+
+/*======================Prev and Next button=========================*/
+.img-btn-prev, .img-btn-next {
+    display: block;
+    padding: 20px 10px;
+    border-radius: 4px;
+    background-color: #111;
+    position: fixed;
+    top: 33vh;
+    padding: 18vh 0px;
+    z-index: 910;
+    color: #fff;
+}
+
+.img-btn-next {
+    width: 50px;
+    right: 0;
+    float: right;
+    background: url(../images/lightbox/next.png) right 48% no-repeat;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 1;
+}
+
+.img-btn-prev {
+    width: 50px;
+    left: 0;
+    float: left;
+    background: url(../images/lightbox/prev.png) left 48% no-repeat;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 1;
+}
+
+.img-btn-next, .img-btn-prev:hover {
+    cursor: pointer;
+}
+
+.lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 12px;
+    color: #999999;
+}
+
+.close-btn {
+    z-index: 910;
+    position: fixed;
+    top: 54px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/lightbox/close.png) top right no-repeat;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
@@ -249,9 +328,15 @@
         position: absolute;
         text-align: left;
         font-size: .7rem;
-        top: 55%;
+        top: 50%;
         color: #fff;
         margin: 0 45px;
         transform: 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .close-btn {
+        top: 160px;
     }
 }

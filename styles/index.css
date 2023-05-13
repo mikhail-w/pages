@@ -16,7 +16,7 @@ body {
 
 /* =====================HEADER AND NAVBAR======================= */
 header {
-    z-index: 700;
+    z-index: 650;
     position: fixed;
     top: 0;
     left: 0;
@@ -76,7 +76,8 @@ header .nav-bar {
 /*======================= STICKY NAVIGATION======================= */
 header.sticky .nav-bar {
     /* background: linear-gradient(to right, #141e30, #243b55); */
-    background: rgba(100, 85, 210, 0.661);
+    /* background: rgba(100, 85, 210, 0.661); */
+    background: rgba(39, 63, 68, 0.9);
     backdrop-filter: blur(45px);
     /* height: 2rem; */
     padding: 15px 30px;
@@ -197,7 +198,7 @@ h1 {
 }
 
 .hero:before {
-    z-index: 690;
+    z-index: 640;
     content: '';
     position: absolute;
     width: 100%;
@@ -208,7 +209,7 @@ h1 {
 }
 
 .arrow {
-    z-index: 691;
+    z-index: 641;
     text-decoration: none;
     color: white;
     font-size: 3.5rem;
@@ -500,7 +501,7 @@ footer {
     }
 
     .navigation {
-        z-index: 700;
+        z-index: 655;
         position: fixed;
         background: rgba(0, 0, 0, 0.5);
         width: 100%;
@@ -589,6 +590,11 @@ footer {
 }
 
 @media screen and (max-width:529px) {
+    .hero {
+        height: 100vh;
+        background-image: url("../images/background/mobile-hero-bg-main.png");
+    }
+
     .text-span-4 {
         display: block;
     }
