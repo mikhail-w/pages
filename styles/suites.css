@@ -13,23 +13,11 @@
     align-items: center;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .swiper {
     width: 100%;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
-}
-
-.swiper-slide {
-    background-size: cover;
-    background-position: center;
 }
 
 .mySwiper2 {
@@ -51,13 +39,6 @@
 
 .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .swiper-button-next .swiper-button-prev {
@@ -185,6 +166,7 @@
 }
 
 .bg-slider-thumbs {
+    width: 35%;
     justify-content: center;
     text-align: center;
     z-index: 350;
@@ -197,7 +179,7 @@
 }
 
 .thumbs-container {
-    padding: 10px 3px;
+    padding: 10px 40px;
     border-radius: 10px;
     box-shadow: #000;
     justify-content: center;
@@ -207,7 +189,7 @@
 }
 
 .thumbs-container img {
-    width: 1rem;
+    width: 100px;
     margin: 0 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -247,80 +229,6 @@
 
 .item:hover {
     filter: brightness(80%);
-}
-
-/* ======================Popup window when clicked=========================*/
-.img-window {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 900;
-}
-
-.img-window img {
-    max-width: 99vw;
-    max-height: 80vh;
-}
-
-/*======================Prev and Next button=========================*/
-.img-btn-prev, .img-btn-next {
-    display: block;
-    padding: 20px 10px;
-    border-radius: 4px;
-    background-color: #111;
-    position: fixed;
-    top: 33vh;
-    padding: 18vh 0px;
-    z-index: 910;
-    color: #fff;
-}
-
-.img-btn-next {
-    width: 50px;
-    right: 0;
-    float: right;
-    background: url(../images/lightbox/next.png) right 48% no-repeat;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 1;
-}
-
-.img-btn-prev {
-    width: 50px;
-    left: 0;
-    float: left;
-    background: url(../images/lightbox/prev.png) left 48% no-repeat;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 1;
-}
-
-.img-btn-next, .img-btn-prev:hover {
-    cursor: pointer;
-}
-
-.lb-number {
-    display: block;
-    clear: left;
-    padding-bottom: 1em;
-    font-size: 12px;
-    color: #999999;
-}
-
-.close-btn {
-    z-index: 910;
-    position: fixed;
-    top: 54px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    background: url(../images/lightbox/close.png) top right no-repeat;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
