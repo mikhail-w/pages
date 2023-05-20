@@ -200,6 +200,10 @@
 }
 
 /* ==================Gallery Section=========================*/
+.gallery-section {
+    padding-bottom: 50px;
+}
+
 .gallery-section h2 {
     grid-area: gallery-h2;
     color: rgb(59, 65, 64);

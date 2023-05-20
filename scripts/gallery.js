@@ -1,117 +1,50 @@
-let galleryImages = document.querySelectorAll(".gallery > img");
-let elements = Array.from(galleryImages);
-let getLatestOpenedImg;
-let windowWidth = window.innerWidth;
-let calcNewImg;
-let rootFolder;
+let suitesListArray = Array.from(document.getElementsByClassName('suite-item'));
+let gallerySectionArray = Array.from(document.getElementsByClassName('gallery-section'));
+let galleryImageArray;
+let currIndex = 0;
+let selectedSuiteName;
+let hrefPath;
+let srcPath;
 
-let curGallery = document.querySelectorAll('active');
-
-if (galleryImages) {
-
-    console.log(elements)
-
-    galleryImages.forEach(function (image, index) {
-        image.addEventListener('click', function () {
-            let getFullImgUrl = image.currentSrc;
-
-            console.log(image.currentSrc);
-
-            let getImgUrlPos = getFullImgUrl.split("/suites");
-
-            console.log(getImgUrlPos);
-
-            let test = getImgUrlPos[1].split('"');
-            let setNewImgUrl = test[0];
-
-            console.log(setNewImgUrl);
-
-            getLatestOpenedImg = index + 1;
-
-            //Further breakdown image path to isolate suite root-folder and image title
-            let folderPath = setNewImgUrl.split("/");
-            rootFolder = folderPath[1];
-            let imageTitle = folderPath[2];
-
-            console.log("Root Folder: " + rootFolder);
-            console.log("Image Title: " + imageTitle);
-
-            let imgNameStart = imageTitle.split('0');
-
-            console.log(imgNameStart);
-
-            //Create image window popup, arrows and close button
-            let container = document.body;
-            let newImgWindow = document.createElement("div");
-            container.appendChild(newImgWindow);
-            newImgWindow.setAttribute("class", "img-window");
-            newImgWindow.setAttribute("onclick", "closeImg()");
-
-            let newImg = document.createElement("img");
-            newImgWindow.appendChild(newImg);
-            newImg.setAttribute("src", "../images/suites/" + rootFolder + "/" + imageTitle);
-            newImg.setAttribute("id", "current-img");
-
-            newImg.onload = function () {
-
-                let newNextBtn = document.createElement("a");
-                let btnNextText = document.createTextNode("");
-                newNextBtn.appendChild(btnNextText);
-                container.appendChild(newNextBtn);
-                newNextBtn.setAttribute("class", "img-btn-next");
-                newNextBtn.setAttribute("onclick", "changeImg(1)");
-
-                let newPrevBtn = document.createElement("a");
-                let btnPrevText = document.createTextNode("");
-                newPrevBtn.appendChild(btnPrevText);
-                container.appendChild(newPrevBtn);
-                newPrevBtn.setAttribute("class", "img-btn-prev");
-                newPrevBtn.setAttribute("onclick", "changeImg(0)");
-
-                let closeBtn = document.createElement("a");
-                let closeBtnText = document.createTextNode("");
-                closeBtn.appendChild(closeBtnText);
-                container.appendChild(closeBtn);
-                closeBtn.setAttribute("class", "close-btn");
-                closeBtn.setAttribute("onclick", "closeImg()");
-
+//This function identifies the currently selected suite
+function getSuite(val) {
+    if (isNaN(val)) {
+        if (val === "prev") {
+            if (currIndex === 0) {
+                currIndex = 3
+            } else {
+                currIndex -= 1;
             }
-
-        });
-    });
-}
-
-function closeImg() {
-    document.querySelector(".img-window").remove();
-    document.querySelector(".img-btn-next").remove();
-    document.querySelector(".img-btn-prev").remove();
-    document.querySelector(".close-btn").remove();
-}
-
-function changeImg(changeDir) {
-    document.querySelector("#current-img").remove();
-
-    let getImgWindow = document.querySelector(".img-window");
-    let newImg = document.createElement("img");
-    getImgWindow.appendChild(newImg);
-
-
-    if (changeDir === 1) {
-        calcNewImg = getLatestOpenedImg + 1;
-        if (calcNewImg > galleryImages.length) {
-            calcNewImg = 1;
+        } else {
+            if (currIndex === 3) {
+                currIndex = 0;
+            } else {
+                currIndex += 1;
+            }
         }
+    } else {
+        currIndex = val;
     }
-    else if (changeDir === 0) {
-        calcNewImg = getLatestOpenedImg - 1;
-        if (calcNewImg < 1) {
-            calcNewImg = galleryImages.length;
-        }
-    }
-
-    newImg.setAttribute("src", "../images/suites/" + rootFolder + "/" + rootFolder + "-0" + calcNewImg + ".png");
-    newImg.setAttribute("id", "current-img");
-    getLatestOpenedImg = calcNewImg;
-    console.log("Image Number: " + calcNewImg);
+    updateGallery();
 
 }
+
+function updateGallery() {
+    //Change Suite Gallery Title
+    selectedSuiteName = suitesListArray[currIndex].outerText.split(' ')[0];
+    document.getElementById("gallery-title").innerText = selectedSuiteName + " Suite Gallery";
+
+    //Update Gallery images to reflectcurrently selected suite
+    galleryImageArray = Array.from(gallerySectionArray[0].getElementsByTagName('a'));
+
+    //cycle through all <a> tags and update the href and image src paths
+    galleryImageArray.forEach((item, index) => {
+        hrefPath = item.href.split('suites/');
+        srcPath = item.childNodes[1].src.split('suites/');
+        let newPath = hrefPath[0] + "suites/" + selectedSuiteName.toLowerCase() + "/" + selectedSuiteName.toLowerCase() + "-0" + (index + 1) + ".jpg";
+        item.href = newPath;
+        item.childNodes[1].src = srcPath[0] + "suites/" + selectedSuiteName.toLowerCase() + "/" + selectedSuiteName.toLowerCase() + "-0" + (index + 1) + ".jpg";
+    })
+}
+
+
