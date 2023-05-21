@@ -592,7 +592,7 @@ footer {
 @media screen and (max-width:529px) {
     .hero {
         height: 100vh;
-        background-image: url("../images/background/mobile-hero-bg-main.png");
+        background-image: url("../images/background/mobile-hero-bg-main.jpg");
     }
 
     .text-span-4 {
