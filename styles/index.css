@@ -528,7 +528,7 @@ footer {
         background: #fff;
         font-size: .65rem;
         width: 85vw;
-        height: auto;
+        height: 60vh;
         max-width: 400px;
         display: grid;
         place-content: center;
@@ -615,5 +615,15 @@ footer {
 
     .arrow {
         bottom: 50px;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .hero {
+        min-height: 200vh;
+    }
+
+    .hero .info {
+        margin-bottom: 130VH;
     }
 }
