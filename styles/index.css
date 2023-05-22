@@ -590,12 +590,27 @@ footer {
 }
 
 @media screen and (max-width:529px) {
-    .hero {
+
+    /* .hero {
         height: 100vh;
         background-image: url("../images/background/mobile-hero-bg-main.jpg");
-    }
-
+    } */
     .text-span-4 {
         display: block;
+    }
+
+    .hero .info {
+        margin-top: 220px;
+        line-height: 150%;
+        /* line-height: 1em; */
+    }
+
+    .xl.text-shadow.xl-home {
+        line-height: 3rem;
+        font-size: 3rem;
+    }
+
+    .arrow {
+        bottom: 50px;
     }
 }
