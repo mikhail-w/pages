@@ -526,7 +526,9 @@ footer {
     .navigation .nav-items {
         position: relative;
         background: #fff;
-        width: 400px;
+        font-size: .65rem;
+        width: 85vw;
+        height: auto;
         max-width: 400px;
         display: grid;
         place-content: center;
