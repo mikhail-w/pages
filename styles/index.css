@@ -80,7 +80,7 @@ header.sticky .nav-bar {
     background: rgba(39, 63, 68, 0.9);
     backdrop-filter: blur(45px);
     /* height: 2rem; */
-    padding: 15px 30px;
+    padding: 10px 15px;
     justify-content: space-between;
 }
 
