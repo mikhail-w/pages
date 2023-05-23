@@ -618,12 +618,17 @@ footer {
     }
 }
 
+<<<<<<< HEAD
 /* @media screen and (orientation:landscape) {
+=======
+@media screen and (orientation:landscape) {
+>>>>>>> c17210950671e64f5959221e0d00415661b7827d
     .hero {
         min-height: 200vh;
     }
 
     .hero .info {
+<<<<<<< HEAD
         margin-top: 190px;
         margin-bottom: 130VH;
     }
@@ -636,3 +641,8 @@ footer {
         bottom: 395px;
     }
 } */
+=======
+        margin-bottom: 130VH;
+    }
+}
+>>>>>>> c17210950671e64f5959221e0d00415661b7827d
