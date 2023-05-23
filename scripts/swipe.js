@@ -1,9 +1,6 @@
 let touchstartX = 0;
 let touchendX = 0;
-
-const delta = 6;
 let startX;
-let startY;
 
 let gesturedZone = document.getElementById('gesturedZone');
 

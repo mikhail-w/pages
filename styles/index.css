@@ -80,7 +80,7 @@ header.sticky .nav-bar {
     background: rgba(39, 63, 68, 0.9);
     backdrop-filter: blur(45px);
     /* height: 2rem; */
-    padding: 15px 30px;
+    padding: 10px 15px;
     justify-content: space-between;
 }
 
@@ -388,6 +388,7 @@ h1 {
 .contact-form {
     max-width: 700px;
     margin-right: 50px;
+    padding-bottom: 30px;
 }
 
 .contact-form h2 {
@@ -468,7 +469,7 @@ footer {
 
 @media screen and (max-width: 900px) {
     header .nav-bar {
-        padding: 25px 30px;
+        padding: 12px 15px;
     }
 
     .section {
@@ -525,7 +526,9 @@ footer {
     .navigation .nav-items {
         position: relative;
         background: #fff;
-        width: 400px;
+        font-size: .65rem;
+        width: 85vw;
+        height: 60vh;
         max-width: 400px;
         display: grid;
         place-content: center;
@@ -572,7 +575,7 @@ footer {
     }
 
     .contact-info {
-        font-size: 1rem;
+        font-size: 0.75rem;
         padding: 0;
     }
 
@@ -590,12 +593,46 @@ footer {
 }
 
 @media screen and (max-width:529px) {
-    .hero {
+
+    /* .hero {
         height: 100vh;
         background-image: url("../images/background/mobile-hero-bg-main.jpg");
-    }
-
+    } */
     .text-span-4 {
         display: block;
     }
+
+    .hero .info {
+        margin-top: 220px;
+        line-height: 150%;
+        /* line-height: 1em; */
+    }
+
+    .xl.text-shadow.xl-home {
+        line-height: 3rem;
+        font-size: 3rem;
+    }
+
+    .arrow {
+        bottom: 50px;
+    }
 }
+
+/* @media screen and (orientation:landscape) {
+    .hero {
+        min-height: 200vh;
+    }
+
+    .hero .info {
+        margin-top: 190px;
+        margin-bottom: 130VH;
+    }
+
+    .xl.text-shadow.xl-home {
+        font-size: 2.3rem;
+    }
+
+    .arrow {
+        bottom: 395px;
+    }
+} */
