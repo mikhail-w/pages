@@ -139,7 +139,7 @@ header.sticky .logo-title {
 
 .info {
     color: #fff;
-    padding-top: 60vh;
+    padding-top: 56vh;
     padding-left: 30px;
 }
 
@@ -475,7 +475,7 @@ footer {
 
     .xl.text-shadow.xl-home {
         line-height: 3.5rem;
-        font-size: 3.2rem;
+        font-size: 2rem;
     }
 
     /* ==================NAVIGATION MENU================== */
@@ -585,7 +585,7 @@ footer {
 
     .xl.text-shadow.xl-home {
         line-height: 3rem;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .arrow {
