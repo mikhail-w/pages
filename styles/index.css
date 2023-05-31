@@ -122,11 +122,11 @@ header.sticky .logo-title {
 }
 
 .bg-img1 {
-    background-image: url("../images/background/paralax-bg-001.jpg");
+    background-image: url("../images/background/bg-001.jpg");
 }
 
 .bg-img2 {
-    background-image: url("../images/background/paralax-bg-002.jpg");
+    background-image: url("../images/background/bg-002.jpg");
 }
 
 .info {
@@ -346,7 +346,7 @@ h2 {
 
 .contact-section {
     height: 100vh;
-    background-image: url("../images/background/paralax-bg-003.jpg");
+    background-image: url("../images/background/bg-003.jpg");
     background-size: cover;
     display: flex;
     align-items: center;
