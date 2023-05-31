@@ -77,10 +77,10 @@ header .nav-bar {
 header.sticky .nav-bar {
     /* background: linear-gradient(to right, #141e30, #243b55); */
     /* background: rgba(100, 85, 210, 0.661); */
-    background: rgba(39, 63, 68, 0.9);
+    background: rgba(24, 60, 66, 0.9);
     backdrop-filter: blur(45px);
     /* height: 2rem; */
-    padding: 10px 15px;
+    padding: 0px 15px;
     justify-content: space-between;
 }
 
@@ -115,31 +115,23 @@ header.sticky .logo-title {
     position: relative;
 }
 
+.bg-img1, .bg-img2 {
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+
 .bg-img1 {
     background-image: url("../images/background/paralax-bg-001.jpg");
-    display: flex;
-    width: 100vw;
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 .bg-img2 {
     background-image: url("../images/background/paralax-bg-002.jpg");
-    display: flex;
-    width: 100vw;
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 .info {
     color: #fff;
-    padding-top: 56vh;
+    padding-top: 65vh;
     padding-left: 30px;
 }
 
@@ -467,6 +459,10 @@ footer {
     .section {
         padding: 60px 20px;
         font-size: 0.8em;
+    }
+
+    .info {
+        padding-top: 56vh;
     }
 
     .hero.info h1 {

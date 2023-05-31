@@ -8,7 +8,7 @@ html, body {
 }
 
 .hero {
-    background-image: url("../images/background/hero-bg-fleet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.5)), url("../images/background/hero-bg-fleet.jpg");
     width: 100%;
 }
 
@@ -176,7 +176,7 @@ section {
 }
 
 .contact-section {
-    background-image: url("../images/fleet/012.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.5)), url("../images/fleet/012.jpg");
 }
 
 @media screen and (max-width: 900px) {
