@@ -87,7 +87,7 @@
 
 /* ================Title Text Animation================== */
 .swiper-slide .text-content .title {
-    font-size: 1.5em;
+    font-size: 3.5em;
     font-weight: 700;
     text-shadow: 6px 1px 6px rgb(0 0 0 / 60%);
     margin-bottom: 10px;
@@ -257,7 +257,7 @@
     .swiper-slide .text-content {
         position: absolute;
         text-align: left;
-        font-size: .7rem;
+        font-size: .5rem;
         top: 45%;
         color: #fff;
         margin: 0 45px;
