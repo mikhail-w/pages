@@ -269,4 +269,8 @@
     .close-btn {
         top: 160px;
     }
+
+    .bg-slider-thumbs {
+        bottom: 9vh;
+    }
 }
