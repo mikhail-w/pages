@@ -274,6 +274,7 @@
         bottom: 9vh;
     }
 }
+<<<<<<< HEAD
 
 @media screen and (orientation:landscape) {
     .swiper-slide .text-content {
@@ -282,3 +283,5 @@
         margin: 0 70px;
     }
 }
+=======
+>>>>>>> 1fb3583e04861d76d6af4f7fbb84bcdaf981c29c
