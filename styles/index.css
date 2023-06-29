@@ -78,6 +78,7 @@ header.sticky .nav-bar {
     /* background: linear-gradient(to right, #141e30, #243b55); */
     /* background: rgba(100, 85, 210, 0.661); */
     background: rgba(24, 60, 66, 0.9);
+    /* background: linear-gradient(to right, #ff9966, #ff5e62); */
     backdrop-filter: blur(45px);
     /* height: 2rem; */
     padding: 0px 15px;
@@ -171,11 +172,12 @@ h2 {
 }
 
 /* ==================ANIMATION================== */
-/* h1 {
+h1 {
     animation-delay: 250ms;
     animation-duration: 3s;
     animation-name: slidein;
-} */
+}
+
 @keyframes slidein {
     from {
         margin-bottom: 100%;
@@ -298,6 +300,12 @@ h2 {
 .info p {
     font-size: 1.2rem;
     font-weight: 200;
+}
+
+/* ===================ABOUT SECTION================= */
+#about .section {
+    /* background-image: linear-gradient(to right, #ff9966, #ff5e62); */
+    color: #080808;
 }
 
 /* ===================SUITES SECTION================= */

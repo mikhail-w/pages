@@ -257,7 +257,7 @@
     .swiper-slide .text-content {
         position: absolute;
         text-align: left;
-        font-size: .7rem;
+        font-size: .5rem;
         top: 45%;
         color: #fff;
         margin: 0 45px;
@@ -268,5 +268,17 @@
 @media screen and (max-width: 600px) {
     .close-btn {
         top: 160px;
+    }
+
+    .bg-slider-thumbs {
+        bottom: 9vh;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .swiper-slide .text-content {
+        top: 35%;
+        font-size: .7rem;
+        margin: 0 70px;
     }
 }
