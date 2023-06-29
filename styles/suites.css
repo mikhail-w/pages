@@ -274,14 +274,11 @@
         bottom: 9vh;
     }
 }
-<<<<<<< HEAD
 
 @media screen and (orientation:landscape) {
     .swiper-slide .text-content {
-        top: 35%;
-        font-size: .7rem;
+        top: 25%;
+        font-size: .5rem;
         margin: 0 70px;
     }
 }
-=======
->>>>>>> 1fb3583e04861d76d6af4f7fbb84bcdaf981c29c
