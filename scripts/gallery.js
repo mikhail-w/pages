@@ -1,5 +1,6 @@
 let suitesListArray = Array.from(document.getElementsByClassName('suite-item'));
 let gallerySectionArray = Array.from(document.getElementsByClassName('gallery-section'));
+let btnLink = document.getElementsByClassName('gallery-end-section')[0].children[0].href;
 let galleryImageArray;
 let currIndex = 0;
 let indexMap = new Map([
@@ -7,6 +8,12 @@ let indexMap = new Map([
     ["single", 1],
     ["kingston", 2],
     ["camping", 3]
+]);
+let linkMap = new Map([
+    [0, "https://abnb.me/2BOZhx2FBxb"],
+    [1, "https://abnb.me/p3x9nz4FBxb"],
+    [2, "https://abnb.me/JInOH0tpWzb"],
+    [3, "https://abnb.me/UBuuBvKOezb"]
 ]);
 let selectedSuiteName;
 let hrefPath;
@@ -83,5 +90,6 @@ function updateImageGallery() {
         item.href = newPath;
         item.childNodes[1].src = srcPath[0] + "suites/" + selectedSuiteName.toLowerCase() + "/" + selectedSuiteName.toLowerCase() + "-0" + (index + 1) + ".jpg";
     })
+    document.getElementsByClassName('gallery-end-section')[0].children[0].href = linkMap.get(currIndex);
 }
 
