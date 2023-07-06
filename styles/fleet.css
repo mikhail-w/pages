@@ -33,20 +33,65 @@ html, body {
     }
 }
 
+/* ==================icons================== */
+.uil {
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+#car-door {
+    height: 1rem;
+}
+
+.gear {
+    width: 1.3rem;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3125rem 0 0.625rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.car-feature {
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    min-height: 40px;
+    padding-right: 1.5rem;
+    text-align: center;
+}
+
+.icon {
+    display: block;
+    margin-right: 0.5rem;
+    width: 1.5rem;
+}
+
 /* ==================CAR LIST================== */
 section {
     padding: 60px 0 180px 0;
 }
 
-.cars h2 {
+.main-header {
     color: rgb(59, 65, 64);
     text-align: center;
     padding-bottom: 50px;
 }
 
-.cars {
-    flex-direction: column;
-    align-items: center;
+.header {
+    color: rgb(59, 65, 64);
+    text-align: center;
+}
+
+.label {
+    font-size: small;
 }
 
 .cars ul {
@@ -57,10 +102,8 @@ section {
     gap: 60px 20px;
 }
 
-.cars li {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
+.card {
+    border-radius: .25rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
     overflow: hidden;
 }
@@ -75,44 +118,15 @@ section {
     width: 50vw;
 }
 
-.item-content h2 {
-    color: rgb(59, 65, 64);
-    margin: 0;
-}
-
-.card {
-    display: flex;
-}
-
-.slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: 200ms opacity ease-in-out;
-    transition-delay: 200ms;
-}
-
-.slide[data-active] {
-    opacity: 1;
-    z-index: 1;
-    transition-delay: 0ms;
-}
-
 .swiper-pagination {
     color: #fff;
 }
 
 .swiper-slide img {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 60vh;
     object-fit: cover;
-    object-position: center;
-}
-
-.mySwiper {
-    width: 80vw;
-    height: 60vh;
     object-position: center;
 }
 
@@ -141,6 +155,8 @@ section {
 
 .actions {
     margin: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .actions a {
@@ -179,14 +195,6 @@ section {
         width: 95%;
     }
 
-    .cars li {
-        flex-direction: column;
-    }
-
-    .mySwiper {
-        width: 97vw;
-    }
-
     .item-content {
         width: 100vw;
     }
@@ -195,12 +203,20 @@ section {
         font-size: .75rem;
     }
 
-    .swiper-button-next {
-        right: 1.05rem;
-    }
-
     .swiper-wrapper img {
         max-width: 100%;
         object-fit: contain;
+    }
+
+    .swiper-slide img {
+        height: 33vh;
+    }
+
+    .features {
+        justify-content: left;
+    }
+
+    .label {
+        font-size: .6rem;
     }
 }
