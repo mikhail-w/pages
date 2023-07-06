@@ -34,7 +34,7 @@ html, body {
 }
 
 /* ==================icons================== */
-.uil {
+.passengers {
     font-size: 1rem;
 }
 
@@ -213,7 +213,9 @@ section {
     }
 
     .features {
-        justify-content: left;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .label {
