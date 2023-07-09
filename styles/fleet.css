@@ -190,6 +190,33 @@ section {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.5)), url("../images/fleet/012.jpg");
 }
 
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-top: 5px;
+}
+
+label {
+    color: #fff;
+}
+
+form {
+    width: 90%;
+}
+
+#phone {
+    outline: 0;
+    margin-bottom: 10px;
+}
+
+#fmt {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 900px) {
     .cars ul {
         width: 95%;
