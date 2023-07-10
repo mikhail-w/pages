@@ -212,11 +212,6 @@ form {
     margin-bottom: 10px;
 }
 
-#fmt {
-    color: #fff;
-    margin-bottom: 20px;
-}
-
 @media screen and (max-width: 900px) {
     .cars ul {
         width: 95%;

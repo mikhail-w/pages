@@ -86,7 +86,7 @@
                         <div class="swiper-button-prev"></div>
                     </div>
                     <div class="header">
-                        <h2>2021 BMW 330i</h2>
+                        <h2>BMW 330i</h2>
                     </div>
                     <div class="features">
                         <div class="car-feature">
@@ -154,7 +154,7 @@
                         <div class="swiper-button-prev"></div>
                     </div>
                     <div class="header">
-                        <h2>2019 Camero</h2>
+                        <h2>Camero</h2>
                     </div>
                     <div class="features">
                         <div class="car-feature">
@@ -224,7 +224,7 @@
                         <div class="swiper-button-prev"></div>
                     </div>
                     <div class="header">
-                        <h2>2020 Mercedez</h2>
+                        <h2>Mercedez CLS</h2>
                     </div>
                     <div class="features">
                         <div class="car-feature">
@@ -299,12 +299,20 @@
                     </div>
                     <div class="form-element">
                         <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone" class="text-box" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
-                        <p id="fmt">Format: 123-456-7890</p>
+                        <input type="tel" id="phone" name="phone" class="text-box" placeholder="xxxxxxxxxx" pattern="[0-9]{10}" required />
                     </div>
                     <div class="form-element">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" class="text-box" placeholder="What's Your Email?" required>
+                    </div>
+                    <div class="car form-element">
+                        <label for="cars">Select Vehicle:</label>
+                        <select id="cars" class="text-box" name="Vehicle" required>
+                            <option value=""></option>
+                            <option value="BMW 330i">BMW 330i</option>
+                            <option value="Camero">Camero</option>
+                            <option value="Mercedez">Mercedez</option>
+                        </select>
                     </div>
                     <div class="form-element">
                         <label for="dates">Select Dates:</label>
@@ -319,10 +327,7 @@
                 </form>
             </div>
         </div>
-
-
         <footer>
-
             <p>ACE Suites LLC&copy;
                 <script>document.write(new Date().getFullYear());</script>
             </p>
