@@ -213,6 +213,10 @@ form {
 }
 
 @media screen and (max-width: 900px) {
+    form {
+        width: 80vw;
+    }
+
     .cars ul {
         width: 95%;
     }
