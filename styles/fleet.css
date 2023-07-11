@@ -50,8 +50,19 @@ ul {
     width: 1.3rem;
 }
 
+.png-icon {
+    width: .9rem;
+    display: block;
+    margin-right: 0.5rem;
+}
+
+.con-img {
+    width: 1.8rem;
+}
+
 .features {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 0.3125rem 0 0.625rem;
@@ -95,14 +106,15 @@ section {
 }
 
 .cars ul {
-    width: 60%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 60px 20px;
 }
 
 .card {
+    width: 90vw;
+    max-width: 750px;
+    margin: auto;
     border-radius: .25rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
     overflow: hidden;
@@ -217,21 +229,12 @@ form {
         width: 80vw;
     }
 
-    .cars ul {
-        width: 95%;
-    }
-
     .item-content {
         width: 100vw;
     }
 
     .contact-info {
         font-size: .75rem;
-    }
-
-    .swiper-wrapper img {
-        max-width: 100%;
-        object-fit: contain;
     }
 
     .swiper-slide img {
