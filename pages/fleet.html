@@ -183,7 +183,7 @@
                     </div>
                     </div>
                     <div class="actions">
-                        <a href="#contact">Reserve Now</a>
+                        <a href="#contact" class="vehicle-select-button" onclick="updateSelected('BMW 330i')">Reserve Now</a>
                     </div>
                 </li>
                 <li class="card">
@@ -266,7 +266,7 @@
                         </p>
                     </div>
                     <div class="actions">
-                        <a href="#contact">Reserve Now</a>
+                        <a href="#contact" onclick="updateSelected('Camero')">Reserve Now</a>
                     </div>
 
                 </li>
@@ -392,7 +392,7 @@
                         </p>
                     </div>
                     <div class="actions">
-                        <a href="#contact">Reserve Now</a>
+                        <a href="#contact" onclick="updateSelected('Mercedez A220')">Reserve Now</a>
                     </div>
 
                 </li>
@@ -419,7 +419,7 @@
                     </div>
                     <div class="form-element">
                         <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone" class="text-box" placeholder="xxxxxxxxxx" pattern="[0-9]{10}" required />
+                        <input onkeydown="phoneNumberFormatter()" type="tel" id="phone" name="phone" class="text-box" placeholder="(xxx) xxx - xxxx" required />
                     </div>
                     <div class="form-element">
                         <label for="email">Email:</label>
@@ -427,11 +427,11 @@
                     </div>
                     <div class="car form-element">
                         <label for="cars">Select Vehicle:</label>
-                        <select id="cars" class="text-box" name="Vehicle" required>
+                        <select id="carList" class="text-box" name="Vehicle" required>
                             <option value=""></option>
                             <option value="BMW 330i">BMW 330i</option>
                             <option value="Camero">Camero</option>
-                            <option value="Mercedez">Mercedez</option>
+                            <option value="Mercedez A220">Mercedez A220</option>
                         </select>
                     </div>
                     <div class="form-element">

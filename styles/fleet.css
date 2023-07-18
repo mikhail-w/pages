@@ -33,58 +33,6 @@ html, body {
     }
 }
 
-/* ==================icons================== */
-.passengers {
-    font-size: 1rem;
-}
-
-ul {
-    list-style: none;
-}
-
-#car-door {
-    height: 1rem;
-}
-
-.gear {
-    width: 1.3rem;
-}
-
-.png-icon {
-    width: .9rem;
-    display: block;
-    margin-right: 0.5rem;
-}
-
-.con-img {
-    width: 1.8rem;
-}
-
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0.3125rem 0 0.625rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.car-feature {
-    align-items: center;
-    display: flex;
-    font-size: 1rem;
-    min-height: 40px;
-    padding-right: 1.5rem;
-    text-align: center;
-}
-
-.icon {
-    display: block;
-    margin-right: 0.5rem;
-    width: 1.5rem;
-}
-
 /* ==================CAR LIST================== */
 section {
     padding: 60px 0 180px 0;
@@ -113,7 +61,7 @@ section {
 
 .card {
     width: 90vw;
-    max-width: 750px;
+    max-width: 900px;
     margin: auto;
     border-radius: .25rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
@@ -165,6 +113,59 @@ section {
     right: .5rem;
 }
 
+/* ==================icons================== */
+.passengers {
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+#car-door {
+    height: 1rem;
+}
+
+.gear {
+    width: 1.3rem;
+}
+
+.png-icon {
+    width: .9rem;
+    display: block;
+    margin-right: 0.5rem;
+}
+
+.con-img {
+    width: 1.8rem;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* padding: 0.3125rem 0 0.625rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.car-feature {
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    min-height: 40px;
+    padding-right: 1.5rem;
+    text-align: center;
+}
+
+.icon {
+    display: block;
+    margin-right: 0.5rem;
+    width: 1.5rem;
+}
+
 .actions {
     margin: 20px;
     margin-bottom: 2rem;
@@ -207,12 +208,9 @@ section {
     flex-direction: column;
 }
 
-input, textarea {
-    margin-top: 5px;
-}
-
 label {
     color: #fff;
+    margin-bottom: 10px;
 }
 
 form {
@@ -221,7 +219,7 @@ form {
 
 #phone {
     outline: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 900px) {
