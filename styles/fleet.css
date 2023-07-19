@@ -254,9 +254,12 @@ form {
         font-size: .6rem;
     }
 }
+<<<<<<< HEAD
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 680px) {
     .swiper-slide img {
         height: 120vh;
     }
 }
+=======
+>>>>>>> c76114452e68c113685605dd301ac9eb5e5fd7bf
