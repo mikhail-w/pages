@@ -255,7 +255,7 @@ form {
     }
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 680px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 920px) {
     .swiper-slide img {
         height: 120vh;
     }
