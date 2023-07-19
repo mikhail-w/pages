@@ -4,7 +4,6 @@ body {
     scroll-padding-top: 85px;
     overflow-x: hidden;
     min-height: 100vh;
-    /* width: fit-content; */
 }
 
 * {
@@ -162,13 +161,7 @@ header.sticky .logo-title {
 }
 
 h2 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+    line-height: 1.2;
 }
 
 /* ==================ANIMATION================== */
@@ -263,58 +256,52 @@ h1 {
     display: none;
 }
 
-.section, .contact-section {
-    position: relative;
-    padding: 4rem;
-    transition: 0.5s ease;
-    transition-property: padding;
-    width: 100%;
-    height: 100vh;
-    background-color: #ffffff;
-    color: rgb(76, 82, 96);
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-
 .section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-    background-color: #eee;
+    padding: 4rem;
     color: #333;
     align-items: center;
     justify-content: center;
 }
 
-.info {
-    text-align: center;
-    z-index: 1;
-}
-
-.info h1 {
-    font-size: 3.5em;
-}
-
-.info p {
-    font-size: 1.2rem;
-    font-weight: 200;
-}
-
 /* ===================ABOUT SECTION================= */
-#about .section {
-    /* background-image: linear-gradient(to right, #ff9966, #ff5e62); */
-    color: #080808;
+#about {
+    max-width: 800px;
 }
 
-/* ===================SUITES SECTION================= */
-.suites {
+#about h2 {
+    color: #2d4c56;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+#about p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* ===================SUITES & FLEET SECTION================= */
+.suites, .fleet {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 800px;
 }
 
-.browse-suites-btn {
+.suites h2, .fleet h2 {
+    color: #2d4c56;
+    margin-bottom: 1rem;
+}
+
+.suites p, .fleet p {
+    line-height: 1.8;
+}
+
+.browse-suites-btn, .browse-fleet-btn {
     background-color: #199fff;
     color: #fff;
     border: 1px solid;
@@ -330,28 +317,6 @@ h1 {
     color: #333;
 }
 
-/* ===================FLEET SECTION================= */
-.fleet {
-    flex-direction: column;
-    align-items: center;
-}
-
-.browse-fleet-btn {
-    background-color: #199fff;
-    color: #fff;
-    border: 1px solid;
-    border-radius: 8px;
-    text-decoration: none;
-    padding: 1.5rem;
-    font-weight: 500;
-    margin-top: 4rem;
-}
-
-.browse-fleet-btn:hover {
-    background-color: gold;
-    color: #333;
-}
-
 .contact-section {
     height: 100vh;
     background-image: url("../images/background/bg-003.jpg");
@@ -359,6 +324,34 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact-section {
+    position: relative;
+    padding: 4rem;
+    transition: 0.5s ease;
+    transition-property: padding;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    color: rgb(76, 82, 96);
+    display: flex;
+    /* align-items: start; */
+    justify-content: center;
+}
+
+.info {
+    text-align: center;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 3.5em;
+}
+
+.info p {
+    font-size: 1.2rem;
+    font-weight: 200;
 }
 
 /* =========================CONTACT SECTION====================== */
@@ -407,10 +400,6 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, in
     border-radius: 5px;
     margin-bottom: 20px;
     opacity: 0.9;
-}
-
-.contact-form .text-box:first-child {
-    /* margin-right: 10px; */
 }
 
 .contact-form textarea {
@@ -598,5 +587,9 @@ footer {
 
     .arrow {
         bottom: 50px;
+    }
+
+    #about h2 {
+        font-size: 27px;
     }
 }
