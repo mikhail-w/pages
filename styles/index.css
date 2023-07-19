@@ -336,7 +336,6 @@ h1 {
     background-color: #ffffff;
     color: rgb(76, 82, 96);
     display: flex;
-    /* align-items: start; */
     justify-content: center;
 }
 

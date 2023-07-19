@@ -232,7 +232,7 @@ form {
     }
 
     .item-content {
-        width: 100vw;
+        width: 90vw;
     }
 
     .contact-info {
@@ -251,15 +251,12 @@ form {
     }
 
     .label {
-        font-size: .6rem;
+        font-size: .7rem;
     }
 }
-<<<<<<< HEAD
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 680px) {
     .swiper-slide img {
         height: 120vh;
     }
 }
-=======
->>>>>>> c76114452e68c113685605dd301ac9eb5e5fd7bf
