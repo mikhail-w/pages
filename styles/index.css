@@ -74,7 +74,7 @@ header .nav-bar {
 
 /*======================= STICKY NAVIGATION======================= */
 header.sticky .nav-bar {
-    background: rgb(14 33 133 / 24%);
+    background: rgb(14 33 133 / 62%);
     backdrop-filter: blur(45px);
     padding: 0px 15px;
     justify-content: space-between;
